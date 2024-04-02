@@ -1,4 +1,4 @@
-// server.js
+
 const Koa = require('koa');
 const createRoutes = require('./router');
 const bodyParser = require('koa-bodyparser');
