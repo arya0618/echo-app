@@ -21,3 +21,8 @@ This is application is based on koa.Js and feathersjs
    npm install
    npm run start
 
+3. Test server health
+
+   ```bash
+   curl --location --request GET 'http://localhost:4000/echo' \
+--header 'Content-Type: application/json' 
