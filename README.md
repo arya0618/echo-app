@@ -24,5 +24,36 @@ This is application is based on koa.Js and feathersjs
 3. Test server health
 
    ```bash
-   curl --location --request GET 'http://localhost:4000/echo' \
---header 'Content-Type: application/json' 
+   curl --location --request GET 'http://localhost:4000/echo' --header 'Content-Type: application/json' 
+
+4. Test POSt api
+
+   ```bash
+   curl --location 'http://localhost:4000/echo' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "employee": {
+    "name": "John Doe",
+    "age": 30,
+    "position": "Software Engineer",
+    "department": "Engineering",
+    "salary": 60000
+  },
+  "address": {
+    "street": "123 Main Street",
+    "city": "Anytown",
+    "state": "Anystate",
+    "zipcode": "12345"
+  },
+  "contacts": [
+    {
+      "type": "email",
+      "value": "john.doe@example.com"
+    },
+    {
+      "type": "phone",
+      "value": "123-456-7890"
+    }
+  ]
+}
+' 
