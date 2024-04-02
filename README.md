@@ -1,10 +1,10 @@
 # echo-app
+This is application is based on koa.Js and feathersjs
 
 ### Prerequisites
 
 - Node.js (v14.x or later)
 - npm (Node Package Manager)
-- Docker (for running the MongoDB container)
 
 ### Installation
 
